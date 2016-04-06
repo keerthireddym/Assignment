@@ -7,12 +7,14 @@ $(document).ready(function () {
     fingers = $('#fingers'),
     toes = $('#toes'),
     interval,
-    reset = $('#reset');
+    reset = $('#reset'),
+    restart = $('#restart');
 
   limit.on('input change', function () {
     var val = $(this).val();
-    if (val)
+    if (val) {
       startCounter()
+    }
   });
 
   reset.on('click', function () {
@@ -21,6 +23,12 @@ $(document).ready(function () {
     clearHighlight();
     clearInterval(interval);
     limit.val('');
+  });
+
+  restart.on('click', function () {
+    if(limit.val()) {
+      startCounter();
+    }
   });
 
   function clearHighlight() {
