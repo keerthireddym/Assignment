@@ -1,0 +1,52 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  height: inherit;
+}
+
+.content {
+  /*background-color: #eaeaea;*/
+  padding: 50px 0;
+  clear: both;
+}
+
+.blocks {
+  width: 100%;
+  clear: both;
+}
+
+.blocks:after {
+  clear: both;
+}
+
+.blocks .block {
+  width: 50%;
+  float: left;
+}
+
+.blocks .block .text {
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.highlight {
+  color: white;
+  font-size: 30px;
+  background-color: black;
+}
+
+#limit {
+  font-size: 20px;
+}
+
+.count-container, .limit-container {
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
